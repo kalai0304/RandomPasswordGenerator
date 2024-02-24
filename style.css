@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --color--002339: #002339;
+    --color--fff: #fff;
+    --color--333: #333;
+    --color--019f55: #019f55;
+
+}
+
+body{
+    background: var(--color--002339);
+    color: var(--color--fff);
+}
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: var(--color--fff);
+    color: var(--color--333);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em 1rem;
+    border: 5px;
+}
+.container h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.container h2 span{
+    color: var(--color--019f55);
+    border-bottom: 4px solid var(--color--019f55);
+    padding-bottom: .5em;
+}
+.pwdlength{
+    display: flex;
+    gap: 1%;
+    margin-top: 8%;
+    padding: 0;
+}
+.pwdlength select{
+    border: 0;
+    outline: 0;
+    width: 10%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+.pwdlength select option{
+   color: red;
+}
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 1.8em;
+}
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+.container button{
+    border: 0;
+    outline: 0;
+    background: var(--color--019f55);
+    color: var(--color--fff);
+    font-size: 1.2em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .9em 1.9em;
+    border-radius: 5px;
+    cursor: pointer;
+}
