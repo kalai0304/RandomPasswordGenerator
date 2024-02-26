@@ -9,7 +9,7 @@
     --color--fff: #fff;
     --color--333: #333;
     --color--019f55: #019f55;
-
+    --color--444:#590;
 }
 
 body{
@@ -41,6 +41,12 @@ body{
     color: var(--color--019f55);
     border-bottom: 4px solid var(--color--019f55);
     padding-bottom: .5em;
+}
+.container .pwdlength h3{
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color--444);
 }
 .pwdlength{
     display: flex;
