@@ -10,8 +10,9 @@
     <div class="container">
         <h2>Generate a <br><span>Random Password</span></h2>
         <div class="pwdlength">
-            <h3>Select Length</h3>
-            <select name="" id="passwordlength">
+            <h3>Password Length</h3>
+            <select id="passwordlength">
+                <!-- <option>Select your password Length</option> -->
                 <option value="8">8</option>
                 <option value="12">12</option>
                 <option value="16">16</option>
@@ -19,9 +20,9 @@
         </div>
         <div class="display">
             <input type="text" name="" id="password" placeholder="Password">
-            <img src="" alt="">
+            <img src="images/copy.png" alt="copy" onclick="copyElement()">
         </div>
-        <button onclick="createPassword()"><img src=" " alt="">Generate Password</button>
+        <button onclick="createPassword()"><img src="images/generate.png" alt="">Generate Password</button>
     </div>
     <script src="scritpt.js"></script>
 </body>

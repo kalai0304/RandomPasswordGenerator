@@ -1,12 +1,11 @@
 const passwordBox=document.getElementById("password");
-const pwdlength = 8;
-
 const upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase="abcdefghijklmnopqrstuvwxyz";
 const number="0123456789";
-const symbol="~!@#$%^&*()-_+=?></|[]{}";
+const symbol="~!@#$%^&*()-_+=?></|[]{} ";
 const allChars = upperCase+lowerCase+number+symbol;
 function createPassword(){
+    const pwdlength = document.getElementById("passwordlength").value;
     let password="";
     password+=upperCase[Math.floor(Math.random() * upperCase.length)];
     password+=lowerCase[Math.floor(Math.random() * lowerCase.length)];
@@ -17,5 +16,15 @@ function createPassword(){
     }   
     passwordBox.value=password;
 }
-// console.log("12"+"15");
-// console.log(12+15);
+function copyElement(){
+    var copyText=document.getElementById("password");
+    if(copyText.value==""){
+        alert("please click Generate password before copy");
+    }else{
+    copyText.hidden=false;
+    copyText.select();
+    document.execCommand("copy");
+    copyText.text=true;
+    alert("copied text is: "+copyText.value);
+    }
+}
