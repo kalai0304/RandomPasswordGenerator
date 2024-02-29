@@ -1,9 +1,11 @@
 const passwordBox=document.getElementById("password");
+
 const upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase="abcdefghijklmnopqrstuvwxyz";
 const number="0123456789";
 const symbol="~!@#$%^&*()-_+=?></|[]{} ";
 const allChars = upperCase+lowerCase+number+symbol;
+// Creating Password for given length;
 function createPassword(){
     const pwdlength = document.getElementById("passwordlength").value;
     let password="";
@@ -16,6 +18,8 @@ function createPassword(){
     }   
     passwordBox.value=password;
 }
+
+//Copy input element
 function copyElement(){
     var copyText=document.getElementById("password");
     if(copyText.value==""){
