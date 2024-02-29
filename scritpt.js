@@ -5,6 +5,7 @@ const lowerCase="abcdefghijklmnopqrstuvwxyz";
 const number="0123456789";
 const symbol="~!@#$%^&*()-_+=?></|[]{} ";
 const allChars = upperCase+lowerCase+number+symbol;
+
 // Creating Password for given length;
 function createPassword(){
     const pwdlength = document.getElementById("passwordlength").value;
